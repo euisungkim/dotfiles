@@ -1,7 +1,23 @@
+# Enable CLI color in zsh
+export CLICOLOR=true
 
+# Set the history file in Zsh
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
 
-
+# Options for better history management
+setopt APPEND_HISTORY       # Append to history file
+setopt INC_APPEND_HISTORY   # Add commands to history file immediately
+setopt SHARE_HISTORY        # Share history between sessions
+setopt EXTENDED_HISTORY     # Add timestamps to history
+setopt HIST_IGNORE_DUPS     # Don't save duplicate commands consecutively
+setopt HIST_REDUCE_BLANKS   # Remove blank commands
 
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+# ---
+# Enable zsh-syntax-highlighting 
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
