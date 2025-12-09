@@ -1,3 +1,6 @@
+# Aliases
+alias cm='chezmoi'
+
 # Enable CLI color in zsh
 export CLICOLOR=true
 
@@ -18,6 +21,9 @@ setopt HIST_REDUCE_BLANKS   # Remove blank commands
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
-# ---
+### Plugins
+# Enable zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Enable zsh-syntax-highlighting 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
