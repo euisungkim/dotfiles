@@ -1,5 +1,11 @@
 brew 'neovim'
 brew 'ripgrep'
 brew 'wget'
+brew 'neofetch'
 brew 'zsh-syntax-highlighting'
 brew 'zsh-autosuggestions'
+
+cask 'wezterm'
+cask 'steam'
+cask 'vlc'
+cask 'zoom'
